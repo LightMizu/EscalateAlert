@@ -1,0 +1,20 @@
+[project]
+name = "alertescalation"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "LightMizu", email = "1blend.your.life@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "httpx>=0.28.1",
+    "kurigram>=2.2.27",
+]
+
+[project.scripts]
+alertescalation = "alertescalation:main"
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
